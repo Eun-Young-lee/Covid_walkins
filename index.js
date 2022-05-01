@@ -49,8 +49,6 @@ mongoose.connect('mongodb+srv://poply:000@cluster0.okhyz.mongodb.net/myFirstData
 useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false
 }). then(()=> console.log('MongoDB Connected...')).catch(err =>console.log(err))
 
-app.get('/', (req,res) => res.send('Hello World'));
-
 
 let map;
 

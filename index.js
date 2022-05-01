@@ -46,7 +46,7 @@ const url = `./data/walkin.json`;
 
 const express = require('express');
 const app = express();
-const port = 8000;
+const port = 3000;
 
 let map;
 

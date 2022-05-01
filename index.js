@@ -44,12 +44,6 @@ const table = document.querySelector('.search__result');
 const mapSection = document.querySelector('.search__map');
 const url = `./data/walkin.json`;
 
-const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://poply:000@cluster0.okhyz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
-useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false
-}). then(()=> console.log('MongoDB Connected...')).catch(err =>console.log(err))
-
-
 let map;
 
 function reloadMap() {

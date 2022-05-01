@@ -44,6 +44,10 @@ const table = document.querySelector('.search__result');
 const mapSection = document.querySelector('.search__map');
 const url = `./data/walkin.json`;
 
+const express = require('express');
+const app = express();
+const port = 8000;
+
 let map;
 
 function reloadMap() {

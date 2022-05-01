@@ -196,6 +196,12 @@ function setForm(data) {
 }
 
 function loadCentre() {
+
+const mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://poply:000@cluster0.okhyz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
+useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false
+}). then(()=> console.log('MongoDB Connected...')).catch(err =>console.log(err))
+
   return fetch('./data/data.json')
     .then((response) => response.json())
     .then((json) => setForm(json.details));

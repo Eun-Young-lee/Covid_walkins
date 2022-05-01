@@ -44,10 +44,6 @@ const table = document.querySelector('.search__result');
 const mapSection = document.querySelector('.search__map');
 const url = `./data/walkin.json`;
 
-const express = require('express');
-const app = express();
-const port = 3000;
-
 const mongoose = require('mongoose');
 mongoose.connect('mongodb+srv://poply:000@cluster0.okhyz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
 useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false
